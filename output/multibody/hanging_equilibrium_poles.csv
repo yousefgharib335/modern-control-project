@@ -1,0 +1,9 @@
+Case,Real_per_s,Imag_per_s
+Undamped,0,0
+Undamped,0,0
+Undamped,0,12.5807079776882
+Undamped,0,-12.5807079776882
+Example damping,0,0
+Example damping,-0.344923987395138,12.5721490540442
+Example damping,-0.344923987395138,-12.5721490540442
+Example damping,-0.568930118611455,0

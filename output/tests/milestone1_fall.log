@@ -1,0 +1,6 @@
+    initial_angle_deg    peak_angle_deg    final_angle_deg    settling_time_s    max_analytical_angle_error_deg    assumed_arm_damping    assumed_pendulum_damping
+    _________________    ______________    _______________    _______________    ______________________________    ___________________    ________________________
+
+            1                313.71              180              22.669                   0.00011305                    0.00011                  2.4e-05         
+
+MILESTONE1_FALL_VERIFIED

@@ -1,0 +1,641 @@
+{
+  "main": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Assembly1.iam",
+  "occurrences": [
+    {
+      "name": "ROTERY ENCODER.step:1",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\ROTERY ENCODER.step.ipt",
+      "grounded": false,
+      "suppressed": false,
+      "transform": [
+        1.0000000000000004,
+        4.4408920985006257e-16,
+        -3.9004904926597584e-16,
+        -4.717086446603893,
+        -5.551115123125809e-17,
+        1.0000000000000009,
+        -2.1492734863190297e-16,
+        -7.7662105824792595,
+        5.551115123125817e-17,
+        3.330669073875467e-16,
+        0.9999999999999986,
+        6.315768700480358,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Motor:1",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Motor.ipt",
+      "grounded": true,
+      "suppressed": false,
+      "transform": [
+        -0.6633102583396688,
+        0.7483445070162283,
+        -1.0385487681005266e-15,
+        15.223516278164613,
+        0.7483445070162283,
+        0.6633102583396687,
+        2.7755575615628923e-16,
+        12.673471312664688,
+        8.965873771773998e-16,
+        -5.930866855568096e-16,
+        -1.0,
+        16.515771391606698,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Rigid 6 to 8mm Coupler v2:1",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Rigid 6 to 8mm Coupler v2.ipt",
+      "grounded": false,
+      "suppressed": false,
+      "transform": [
+        0.8862825220859575,
+        -0.42732186101568986,
+        0.1786038021518777,
+        14.455519928911526,
+        -0.16088020903813624,
+        0.07756852765748537,
+        0.9839210750141317,
+        8.442610690103939,
+        -0.43430501883454825,
+        -0.9007658689222592,
+        -8.231056277375005e-17,
+        6.875771391606461,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "motor holder:1",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\motor holder.ipt",
+      "grounded": true,
+      "suppressed": false,
+      "transform": [
+        0.6487340711298998,
+        0.7610151805024826,
+        1.033341918952444e-15,
+        13.625384399109395,
+        -0.7610151805024826,
+        0.6487340711298998,
+        -2.7755575615628923e-16,
+        11.3111297632919,
+        -8.815882538219831e-16,
+        -6.063290113155683e-16,
+        1.0,
+        12.605771391606703,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ALLEN_04_mm:1",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\ALLEN_04_mm.ipt",
+      "grounded": false,
+      "suppressed": false,
+      "transform": [
+        0.9839210750140933,
+        -0.17860380215187108,
+        -6.1662677585044e-08,
+        13.986684948262866,
+        -0.1786038021518694,
+        -0.9839210750140959,
+        1.1193162590614526e-08,
+        5.859817868191934,
+        -6.267034935447668e-08,
+        1.0594505396023354e-16,
+        -0.9999999999999988,
+        6.875771391606466,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "ROTERY ENCODER.step:2",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\ROTERY ENCODER.step.ipt",
+      "grounded": false,
+      "suppressed": false,
+      "transform": [
+        -0.7825629881745796,
+        -0.17860380215187815,
+        -0.5964024240361979,
+        15.545003122037988,
+        0.14205278112301958,
+        -0.9839210750141348,
+        0.10826045223589607,
+        14.44452924769016,
+        -0.6061486425907227,
+        4.209214269381973e-17,
+        0.7953513834058115,
+        6.875771391606462,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "Assembly2:1",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Assembly2\\Assembly2.iam",
+      "grounded": false,
+      "suppressed": false,
+      "transform": [
+        1.4579839003502946e-15,
+        0.9839210750141203,
+        0.1786038021518747,
+        15.103401586796581,
+        -1.6712789707057933e-16,
+        -0.17860380215187527,
+        0.9839210750141175,
+        13.126284881326258,
+        1.0000000000000602,
+        -1.4643907644483353e-15,
+        -9.59608079282942e-17,
+        3.598051480324175,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "80-20 Extrude aliminium:1",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\80-20 Extrude aliminium.ipt",
+      "grounded": true,
+      "suppressed": false,
+      "transform": [
+        -0.6487340711299042,
+        0.7610151805024883,
+        -5.355514087910408e-16,
+        12.714661441016965,
+        0.7610151805024874,
+        0.6487340711299054,
+        -2.797531270449221e-16,
+        11.454599946965688,
+        8.66857020854375e-16,
+        -5.036452139956117e-16,
+        -1.000000000000016,
+        10.85577139160671,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "80-20 Extrude aliminium:2",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\80-20 Extrude aliminium.ipt",
+      "grounded": true,
+      "suppressed": false,
+      "transform": [
+        -0.6487340711299063,
+        0.7610151805024902,
+        -5.582590691763787e-16,
+        13.49314232637286,
+        0.7610151805024903,
+        0.648734071129908,
+        -2.7975312704491397e-16,
+        10.541381730362712,
+        8.815882538219923e-16,
+        -5.209260882625485e-16,
+        -1.0000000000000144,
+        10.855771391606705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "references": [
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\80-20 Extrude aliminium.ipt",
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Assembly2\\Assembly2.iam",
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Assembly2\\encoder case.ipt",
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Assembly2\\4mm 5mm 6mm Stainless Steel Hex Shaft Coupling.ipt",
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\ROTERY ENCODER.step.ipt",
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\ALLEN_04_mm.ipt",
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\motor holder.ipt",
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Rigid 6 to 8mm Coupler v2.ipt",
+    "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\Motor.ipt"
+  ],
+  "constraints": [
+    {
+      "name": "Mate:1",
+      "health": 11778,
+      "one": "Motor:1",
+      "two": "motor holder:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:2",
+      "health": 11778,
+      "one": "Motor:1",
+      "two": "motor holder:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:8",
+      "health": 11778,
+      "one": "Rigid 6 to 8mm Coupler v2:1",
+      "two": "ROTERY ENCODER.step:2",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:9",
+      "health": 11778,
+      "one": "ROTERY ENCODER.step:2",
+      "two": "Rigid 6 to 8mm Coupler v2:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:10",
+      "health": 11778,
+      "one": "ALLEN_04_mm:1",
+      "two": "Rigid 6 to 8mm Coupler v2:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:11",
+      "health": 11778,
+      "one": "ALLEN_04_mm:1",
+      "two": "Rigid 6 to 8mm Coupler v2:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:12",
+      "health": 11778,
+      "one": "Assembly2:1",
+      "two": "Rigid 6 to 8mm Coupler v2:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:13",
+      "health": 11778,
+      "one": "Assembly2:1",
+      "two": "ROTERY ENCODER.step:2",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:14",
+      "health": 11778,
+      "one": "Assembly2:1",
+      "two": "Motor:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:15",
+      "health": 11778,
+      "one": "Assembly2:1",
+      "two": "Motor:1",
+      "suppressed": false
+    },
+    {
+      "name": "Flush:1",
+      "health": 11778,
+      "one": "80-20 Extrude aliminium:2",
+      "two": "80-20 Extrude aliminium:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:18",
+      "health": 11778,
+      "one": "80-20 Extrude aliminium:2",
+      "two": "80-20 Extrude aliminium:1",
+      "suppressed": false
+    },
+    {
+      "name": "Flush:2",
+      "health": 11778,
+      "one": "80-20 Extrude aliminium:2",
+      "two": "80-20 Extrude aliminium:1",
+      "suppressed": false
+    },
+    {
+      "name": "Mate:19",
+      "health": 11778,
+      "one": "motor holder:1",
+      "two": "80-20 Extrude aliminium:2",
+      "suppressed": false
+    },
+    {
+      "name": "Flush:3",
+      "health": 11778,
+      "one": "motor holder:1",
+      "two": "80-20 Extrude aliminium:2",
+      "suppressed": false
+    },
+    {
+      "name": "Flush:4",
+      "health": 11778,
+      "one": "motor holder:1",
+      "two": "80-20 Extrude aliminium:1",
+      "suppressed": false
+    }
+  ],
+  "base_occurrences": [
+    {
+      "name": "80-20 Extrude aliminium:1",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\80-20 Extrude aliminium.ipt",
+      "grounded": false,
+      "suppressed": false,
+      "transform": [
+        1.0,
+        0.0,
+        0.0,
+        -2.8350061209198643,
+        0.0,
+        1.0,
+        0.0,
+        -4.232144244684914,
+        0.0,
+        0.0,
+        1.0,
+        12.445168457278315,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "new_geometry": [
+    {
+      "name": "Fixed_Base",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\aluminum profile.iam",
+      "mass_kg": 0.026786291359838666,
+      "com_cm": [
+        -2.8350061209205926,
+        -4.232144244684914,
+        6.945168457278316
+      ],
+      "inertia_kg_cm2": [
+        0.27381759025687324,
+        0.27381759025747554,
+        0.007444971424268829,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_min_cm": [
+        -3.4350061209198643,
+        -4.832144244684914,
+        1.4451684572783154
+      ],
+      "bounds_max_cm": [
+        -2.235006120919864,
+        -3.632144244684914,
+        12.445168457278315
+      ]
+    },
+    {
+      "name": "Aluminum_Profile",
+      "file": "D:\\university new\\Modern Control\\project\\cad\\originals\\inventor-package\\modern control\\modern control\\80-20 Extrude aliminium.ipt",
+      "mass_kg": 0.026786291359838666,
+      "com_cm": [
+        -7.282081926061635e-13,
+        2.685793678163868e-16,
+        -5.499999999999999
+      ],
+      "inertia_kg_cm2": [
+        0.27381759025687313,
+        0.27381759025747543,
+        0.0074449714242688534,
+        4.796163466375437e-18,
+        -2.0383694732117866e-17,
+        4.076738946423058e-17
+      ],
+      "bounds_min_cm": [
+        -0.6,
+        -0.6000000000000001,
+        -11.0
+      ],
+      "bounds_max_cm": [
+        0.6,
+        0.6000000000000001,
+        0.0
+      ]
+    }
+  ],
+  "comparison": {
+    "new_fixed_profiles": 2,
+    "old_arm_inertia_kg_m2": 9.043825203196251e-05,
+    "new_arm_inertia_kg_m2": 8.614647726329205e-05,
+    "old_pendulum_com_arm_m": [
+      -0.02670519468261758,
+      -2.419811148150577e-18,
+      0.014667298804949918
+    ],
+    "new_pendulum_com_arm_m": [
+      -0.026705194682616385,
+      3.684453228372844e-21,
+      0.01464323013049731
+    ],
+    "arm_pose_deg": 129.0614271088464,
+    "pendulum_pose_deg": 90.04342571848966
+  },
+  "incoming_inventory": [
+    {
+      "path": "80-20 Extrude aliminium.ipt",
+      "sha256": "56e1e4f6fc41101249a41879c59cd47041f112602dfec1c721d5aa139b5c7fde"
+    },
+    {
+      "path": "ALLEN_04_mm.ipt",
+      "sha256": "9ccd772bfecfe6ec663e59bdb6b8069d9fe92741467d9b7f371ed74038d66cdd"
+    },
+    {
+      "path": "aluminum profile.iam",
+      "sha256": "afbb48936c678fb21fdadbf906ac0d6b4990ff2e6a1f900804527f9c286ea7cd"
+    },
+    {
+      "path": "Assembly1.iam",
+      "sha256": "dfb4f067ee3ae07c01fdb33320286734e6ec8702ddf6ec400a6132008b0ff092"
+    },
+    {
+      "path": "Assembly2\\4mm 5mm 6mm Stainless Steel Hex Shaft Coupling.ipt",
+      "sha256": "62d0b05520dcb798cb606fff5e2fb3c6587d5ce6e1b0cb58f8bfb4bd59b3fdea"
+    },
+    {
+      "path": "Assembly2\\Assembly2\\Assembly2.ipt",
+      "sha256": "70a2e00f25e3ee0deb2894612916114c3268afa070ec434f8c0a5f3c5eb5b7d2"
+    },
+    {
+      "path": "Assembly2\\Assembly2.iam",
+      "sha256": "0e9125690ac57e71e3e99967c3414c484a0fb3088274bbb829dbddc6669a1310"
+    },
+    {
+      "path": "Assembly2\\Assembly2.stp",
+      "sha256": "9e2a6463f972778f28ac7c0200454b88245c4c90fd113eea7093d88cd5367769"
+    },
+    {
+      "path": "Assembly2\\encoder case.ipt",
+      "sha256": "3591e7c289a5072520315adf44e5fe283b71ae1ac0c13a9b575f672f22ebd731"
+    },
+    {
+      "path": "Assembly2\\OldVersions\\4mm 5mm 6mm Stainless Steel Hex Shaft Coupling.0001.ipt",
+      "sha256": "4adea83c3eacb26c23e81d20820b5317a63e5e37c2b9d061d96e7445a7b73ef6"
+    },
+    {
+      "path": "Assembly2\\OldVersions\\Assembly2.0001.iam",
+      "sha256": "85be000014906be5f7e8e7a148e0c016075607772d815399723fc730afeaabd3"
+    },
+    {
+      "path": "Assembly2\\OldVersions\\encoder case.0001.ipt",
+      "sha256": "18a0d0d9be2bb54685e960c4143b3b3a1b40b4c038509973319b1ea7608c9ae4"
+    },
+    {
+      "path": "control.ipj",
+      "sha256": "d67a1649ff9271d004a2073b4375157b285400b412cebf8c88938cba79da19c0"
+    },
+    {
+      "path": "motor holder.ipt",
+      "sha256": "ca3fd7b24484ec23bd3ba409a2b92f707a9e35cb89ed2b814fb553c72d697a99"
+    },
+    {
+      "path": "Motor.ipt",
+      "sha256": "5d41489b0c8db6fbaf7392b138dbf6f3c26c9ae76bdc6714af25ddf762de9bcb"
+    },
+    {
+      "path": "OldVersions\\ALLEN_04_mm.0001.ipt",
+      "sha256": "9b744d34eea340bbfd819807c00ea8a2ce3dcc4da7f8f8120acaeccbb961f174"
+    },
+    {
+      "path": "OldVersions\\Assembly1.0004.iam",
+      "sha256": "b115b4efd3519a4ac96564a5eeaeb70662c6671a824ebac0917cb359f5dd7f65"
+    },
+    {
+      "path": "OldVersions\\control.ipj.bak",
+      "sha256": "d67a1649ff9271d004a2073b4375157b285400b412cebf8c88938cba79da19c0"
+    },
+    {
+      "path": "OldVersions\\motor holder.0001.ipt",
+      "sha256": "41325775d510a38dd3d0f1cb381d6efa81535fe8ef6724979616d7cd22ea2bd3"
+    },
+    {
+      "path": "OldVersions\\Motor.0001.ipt",
+      "sha256": "927530738d4f42d651305021a8014c5e6789ebc6bc7d43bcc748c17f60cf9f15"
+    },
+    {
+      "path": "OldVersions\\Rigid 6 to 8mm Coupler v2.0001.ipt",
+      "sha256": "00d6df34d0cd0ea5121fd5df7156f59d25db122e372e037e14e05af2629b0635"
+    },
+    {
+      "path": "Project\\4mm 5mm 6mm Stainless Steel Hex Shaft Coupling\\4mm 5mm 6mm Stainless Steel Hex Shaft Coupling\\4mm 5mm 6mm Stainless Steel Hex Shaft Coupling.ipt",
+      "sha256": "ed822cf97322a17a8fa45c90aeccfa13bf4736ed10d3e88820cc30a3e2f19b0b"
+    },
+    {
+      "path": "Project\\4mm 5mm 6mm Stainless Steel Hex Shaft Coupling.STEP",
+      "sha256": "a9aff7d9e56c549e807d6bceb5e4647de91716ea1525823280b80ce92e96242a"
+    },
+    {
+      "path": "Project\\Project\\3mm - 3mm Coupling.SLDPRT",
+      "sha256": "059dfff5a90699f746404003c790a28d186d75ed83a2e2f5b5522c0c2bc6a589"
+    },
+    {
+      "path": "Project\\Project\\3mm - 3mm Coupling.step",
+      "sha256": "e571ae51239f473d11c544bd9ff511f6ec6a9a4ca7c031912f3d3134787cc647"
+    },
+    {
+      "path": "Project\\Project\\4mm 5mm 6mm Stainless Steel Hex Shaft Coupling.SLDPRT",
+      "sha256": "4ad175ca57538aa8e1be6f2c39bd1526649d58a174966b46600eb8b34f3d9963"
+    },
+    {
+      "path": "Project\\Project\\8mm Allen Key.SLDPRT",
+      "sha256": "d8dc7d6134ce05d5c225bd9b878676b287bdeb8b1aa19c1c99805b2182b8659f"
+    },
+    {
+      "path": "Project\\Project\\ALLEN_03_mm.SLDPRT",
+      "sha256": "039b3ec850eab17d1721096bfe94b9ddac19abb9e31b6b503044ebdff5c84986"
+    },
+    {
+      "path": "Project\\Project\\ALLEN_03_mm.STEP",
+      "sha256": "f038f92282848568d73bee83acf0e089183440461df44786fd231b1dfe66eae7"
+    },
+    {
+      "path": "Project\\Project\\ALLEN_04_mm\\ALLEN_04_mm\\ALLEN_04_mm.ipt",
+      "sha256": "4399f73f3d0be4d4f9c15e1feb06230aa966a195b4d481cbfad6b9d515315625"
+    },
+    {
+      "path": "Project\\Project\\ALLEN_04_mm.SLDPRT",
+      "sha256": "d7d736d8832865249e74f22cc444666d934360502008aaa8e3dc734479733798"
+    },
+    {
+      "path": "Project\\Project\\ALLEN_04_mm.STEP",
+      "sha256": "41bc5bfee68092a0cb201cf0d10999f9b241c7acb164544af808933b4d513205"
+    },
+    {
+      "path": "Project\\Project\\Assem1.SLDASM",
+      "sha256": "68f5ee2d600eb24271d23b30cc2ffea0843eb028ae1bc9d6203b6fffccb1ded3"
+    },
+    {
+      "path": "Project\\Project\\encoder case\\encoder case\\encoder case.ipt",
+      "sha256": "4edcadf913ebf2b5ec535c6928216a9a08224034efd607283c9e6cbb9e224fac"
+    },
+    {
+      "path": "Project\\Project\\encoder case.SLDPRT",
+      "sha256": "5d76fc9de1d1fcd5e1ba31a7ec4689dd0adab5bcae5a08393f9847760eae7227"
+    },
+    {
+      "path": "Project\\Project\\Encoder.SLDPRT",
+      "sha256": "8c549acae4f34efed9d2f0180a4c35bf50bd38f1b1ee5dccf6e06b0409ab95c2"
+    },
+    {
+      "path": "Project\\Project\\motor holder\\motor holder\\motor holder.ipt",
+      "sha256": "6c772e570b84bc332fef9a4d1ac92dbf73997b1c1c7f6ea3f03f3aadfd1f5b84"
+    },
+    {
+      "path": "Project\\Project\\motor holder.err",
+      "sha256": "2eb742d1dd433e3faad6a901e399a25053031e2f3d2e24da3b1b4bf648a67311"
+    },
+    {
+      "path": "Project\\Project\\motor holder.ipt",
+      "sha256": "d1b30f8435e3f2d171d6b17f457fdee1556262193d51c1e4254c45e7e8525889"
+    },
+    {
+      "path": "Project\\Project\\motor holder.SLDPRT",
+      "sha256": "a48cdf514cf113a12b401552d5516acb71a29e0d6eadc2d04411f2c6f82e1bb1"
+    },
+    {
+      "path": "Project\\Project\\Motor.SLDPRT",
+      "sha256": "0285cf07f70ea4922a99f49debf8030ab965fabda252133620f6b0e4c6be5e38"
+    },
+    {
+      "path": "Project\\Project\\pendlum.SLDPRT",
+      "sha256": "3e96f4bd7db6b6960ef789841ed02ae51c18bd8af3e315be7ce08104da3dc1d5"
+    },
+    {
+      "path": "Project\\Project\\Project Description F26.pdf",
+      "sha256": "b3f6d2ebccad28c851733d6cc118b744b2f00c65a97bc9eb5a8bc8733e9df05f"
+    },
+    {
+      "path": "Project\\Project\\Rigid 6 to 8mm Coupler v2.SLDPRT",
+      "sha256": "33d41ca532a18acefa495d51891c329980f6b8335e2678ac35cbbd98009091c6"
+    },
+    {
+      "path": "Project\\Project\\ROTERY ENCODER.step\\ROTERY ENCODER.step\\ROTERY ENCODER.step.ipt",
+      "sha256": "086ab8879e4f0e44f2bf268e914e0f4cdd42b60c9624545d339712e3791bfdd0"
+    },
+    {
+      "path": "Project\\Project\\ROTERY ENCODER.step.SLDPRT",
+      "sha256": "8ea5e464b70cca8248255b3fb05764ed565b4de26a4aea8183b6b6abf8bfb989"
+    },
+    {
+      "path": "Rigid 6 to 8mm Coupler v2.ipt",
+      "sha256": "9b078533742067723b7156abbaa162fd4eb26e75c1da80dc19aa90f22c43933b"
+    },
+    {
+      "path": "ROTERY ENCODER.step.ipt",
+      "sha256": "1ea6572e058531d1d067729cc3052e5111ab54f15efa9ec491bb01235bc298ea"
+    }
+  ]
+}

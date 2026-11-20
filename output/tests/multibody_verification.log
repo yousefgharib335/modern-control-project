@@ -1,0 +1,11 @@
+26.2.0.3386108 (R2026b)
+          Test          MaxAngleError_rad    MaxRateError_rad_s
+    ________________    _________________    __________________
+
+    "hanging_free"         8.3316e-10            1.2587e-09    
+    "hanging_torque"       2.7044e-10            1.2678e-09    
+    "upright_small"        8.4387e-10            1.0247e-08    
+    "hanging_damped"       3.7315e-10            4.6179e-09    
+
+Small-signal state-space max error 4.19e-09.
+Simscape, CAD analytical equations, energy and upright linearization checks passed.

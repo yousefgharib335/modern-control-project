@@ -1,0 +1,27 @@
+Saved D:\university new\Modern Control\project\models\furuta_plant_example.slx
+Saved LQR model using example parameters.
+            Test             PeakPendulum_deg    PeakArm_deg    PeakVoltage_V    RMSVoltage_V    PendulumIAE_rad_s    Recovery_s
+    _____________________    ________________    ___________    _____________    ____________    _________________    __________
+
+    "initial_5deg"                     5           9.6857             12            0.50527           0.017967         0.95068  
+    "voltage_disturbance"        0.34068           0.5692           1.29           0.058548          0.0017244               0  
+
+Closed-loop poles:
+ -16.8359 + 7.0726i -16.8359 - 7.0726i  -2.7370 + 1.8511i  -2.7370 - 1.8511i
+
+                  A: [4×4 double]
+                  B: [4×1 double]
+                  C: [2×4 double]
+                  D: [2×1 double]
+                  K: [-17.1887 -156.4466 -10.6065 -19.6810]
+                  Q: [4×4 double]
+                  R: 0.0278
+                  S: [4×4 double]
+        stateScales: [4×1 double]
+       voltageScale: 6
+    riccatiResidual: 5.3438e-15
+        actualPoles: [4×1 double]
+       voltageLimit: 12
+       initialState: [4×1 double]
+
+LQR verification passed.

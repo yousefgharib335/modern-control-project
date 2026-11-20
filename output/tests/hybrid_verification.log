@@ -1,0 +1,16 @@
+Saved D:\university new\Modern Control\project\models\furuta_plant_example.slx
+Saved hybrid Stateflow model using example parameters.
+      Controller       InitialOffset_rad    CaptureTime_s    PeakArm_deg    PeakVoltage_V    FinalPendulumError_deg    FinalArmReferenceError_deg
+    _______________    _________________    _____________    ___________    _____________    ______________________    __________________________
+
+    "PID_PD"                    0               4.865          159.78            12               -0.00038027                   -0.049508        
+    "PID_PD"                 -0.1               5.025           154.3            12               -0.00026016                   -0.048543        
+    "PID_PD"                  0.1               5.035          153.64            12                0.00024155                     0.04674        
+    "PolePlacement"             0               4.865          159.78            12                1.5739e-08                  1.3515e-07        
+    "PolePlacement"          -0.1               5.025           154.3            12                3.1759e-08                  2.7372e-07        
+    "PolePlacement"           0.1               5.035          153.64            12               -3.3224e-08                  -2.864e-07        
+    "LQR"                       0               4.865          159.78            12               -4.6958e-12                  2.5216e-12        
+    "LQR"                    -0.1               5.025           154.3            12               -7.5965e-12                 -1.7748e-11        
+    "LQR"                     0.1               5.035          153.64            12                7.4144e-12                   2.821e-11        
+
+All three selected controllers passed swing-up, capture and balance. Supervisor checks passed.

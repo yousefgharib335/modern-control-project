@@ -1,0 +1,23 @@
+Saved D:\university new\Modern Control\project\models\furuta_plant_example.slx
+Saved PID model using example parameters.
+            Test             PeakPendulum_deg    PeakArm_deg    PeakVoltage_V    RMSVoltage_V    PendulumIAE_rad_s    Recovery_s
+    _____________________    ________________    ___________    _____________    ____________    _________________    __________
+
+    "initial_5deg"                     5           19.349          3.3351          0.28073           0.046509           3.7996  
+    "voltage_disturbance"         1.0761           4.7973          1.2213          0.11293           0.013003           1.1097  
+
+Actual filtered closed-loop poles:
+ -80.0000 + 0.0000i -61.1613 + 0.0000i -12.9390 + 0.0000i  -2.2725 + 2.3685i  -2.2725 - 2.3685i  -1.2219 + 0.4425i  -1.2219 - 0.4425i
+
+              armP: 1.6594
+         pendulumP: 38.2171
+              armD: 1.4593
+         pendulumD: 4.8324
+              armI: 0.8498
+        filterRate: 80
+    antiWindupRate: 5
+      voltageLimit: 12
+      initialState: [4×1 double]
+       targetPoles: [-1.5000 -2 -3 -4 -5]
+
+PID verification passed.

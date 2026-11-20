@@ -1,0 +1,2 @@
+initial_angle_deg,peak_angle_deg,final_angle_deg,settling_time_s,max_analytical_angle_error_deg,assumed_arm_damping,assumed_pendulum_damping
+1,313.707783450917,180.001075672862,22.6689965121063,0.000113048204017555,0.00011,2.4e-05

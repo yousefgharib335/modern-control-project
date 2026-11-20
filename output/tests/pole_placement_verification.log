@@ -1,0 +1,22 @@
+Saved D:\university new\Modern Control\project\models\furuta_plant_example.slx
+Saved pole-placement model using example parameters.
+            Test             PeakPendulum_deg    PeakArm_deg    PeakVoltage_V    RMSVoltage_V    PendulumIAE_rad_s    Recovery_s
+    _____________________    ________________    ___________    _____________    ____________    _________________    __________
+
+    "initial_5deg"                     5           26.017           2.807          0.24733           0.041433           2.6841  
+    "voltage_disturbance"         1.1569           7.4971          1.0606          0.10754           0.013327           2.0511  
+
+Closed-loop poles:
+   -5.0000   -4.0000   -3.0000   -2.0000
+
+               A: [4×4 double]
+               B: [4×1 double]
+               C: [2×4 double]
+               D: [2×1 double]
+               K: [-0.5665 -32.1664 -0.9358 -3.9487]
+     targetPoles: [-2 -3 -4 -5]
+     actualPoles: [4×1 double]
+    voltageLimit: 12
+    initialState: [4×1 double]
+
+Pole-placement verification passed.

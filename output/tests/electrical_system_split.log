@@ -1,0 +1,4 @@
+Split driver and motor block.
+PWM circuit checks passed: switching, forward, reverse, coast, brake and torque coupling.
+Provisional 0.5 mH, 1000 Hz. Peak winding current 1.65 A for this test.
+Saved split System.

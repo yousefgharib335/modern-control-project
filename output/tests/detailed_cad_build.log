@@ -1,0 +1,21 @@
+Loaded CAD parameter snapshot.
+Connected gravity and both revolute joints.
+Adding CAD body Motor_1
+Adding CAD body motor_holder_1
+Adding CAD body Assembly2_1
+Adding CAD body ROTERY_ENCODER_step_2
+Adding CAD body Rigid_6_to_8mm_Coupler_v2_1
+Adding CAD body ALLEN_04_mm_1
+Compiling physical model.
+Saved CAD-derived Simscape Multibody plant.
+          Test          MaxAngleError_rad    MaxRateError_rad_s
+    ________________    _________________    __________________
+
+    "hanging_free"         8.3316e-10            1.2587e-09    
+    "hanging_torque"       2.7044e-10            1.2678e-09    
+    "upright_small"        8.4387e-10            1.0247e-08    
+    "hanging_damped"       3.7315e-10            4.6179e-09    
+
+Small-signal state-space max error 4.19e-09.
+Simscape, CAD analytical equations, energy and upright linearization checks passed.
+DETAILED_CAD_VERIFIED

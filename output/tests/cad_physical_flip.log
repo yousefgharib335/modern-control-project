@@ -1,0 +1,27 @@
+Loaded CAD parameter snapshot.
+Connected gravity and both revolute joints.
+Adding CAD body Motor_1
+Adding CAD body motor_holder_1
+Adding CAD body Assembly2_1
+Adding CAD body ROTERY_ENCODER_step_2
+Adding CAD body Rigid_6_to_8mm_Coupler_v2_1
+Adding CAD body ALLEN_04_mm_1
+Adding CAD body Fixed_Profile_1
+Adding CAD body Fixed_Profile_2
+Compiling physical model.
+Saved CAD-derived Simscape Multibody plant.
+          Test          MaxAngleError_rad    MaxRateError_rad_s
+    ________________    _________________    __________________
+
+    "hanging_free"          8.158e-10            1.2661e-09    
+    "hanging_torque"       4.2512e-10            5.1059e-09    
+    "upright_small"        8.4716e-10            1.0312e-08    
+    "hanging_damped"       3.6706e-10            4.5538e-09    
+
+Small-signal state-space max error 7.48e-09.
+Simscape, CAD analytical equations, energy and upright linearization checks passed.
+furuta_pid_cad passed zero-torque isolation and test-torque checks (state error 5.7e-09).
+furuta_pole_placement_cad passed zero-torque isolation and test-torque checks (state error 0).
+furuta_lqr_cad passed zero-torque isolation and test-torque checks (state error 0).
+furuta_hybrid_cad passed zero-torque isolation and test-torque checks (state error 3.56e-09).
+PHYSICAL_FLIP_VERIFIED

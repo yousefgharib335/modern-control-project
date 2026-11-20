@@ -1,0 +1,6 @@
+    arm_damping_Nm_s_per_rad    hinge_damping_Nm_s_per_rad    gear_ratio_motor_to_output    gear_efficiency_fraction    arm_validation_RMSE_deg    hinge_validation_RMSE_deg    gear_validation_RMSE_rpm    gear_validation_power_RMSE_W
+    ________________________    __________________________    __________________________    ________________________    _______________________    _________________________    ________________________    ____________________________
+
+            0.00011                     2.4037e-05                      29.998                      0.74572                    0.074896                    0.080529                     0.16586                       0.014457          
+
+SYNTHETIC_FRICTION_GEARBOX_VERIFIED

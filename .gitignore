@@ -1,0 +1,5 @@
+/tmp/
+/slprj/
+*.slxc
+*.asv
+/models/matlab_workspace.mat

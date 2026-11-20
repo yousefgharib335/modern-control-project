@@ -1,0 +1,6 @@
+Built furuta_hybrid_model with the L298N plant subsystem.
+Swing-Up blocks matched the function for 8 states. Max voltage error 5.55e-16 V.
+furuta_pid_model passed L298N command, state feedback, and brake checks.
+furuta_pole_placement_model passed L298N command, state feedback, and brake checks.
+furuta_lqr_model passed L298N command, state feedback, and brake checks.
+furuta_hybrid_model passed L298N command, state feedback, and brake checks.

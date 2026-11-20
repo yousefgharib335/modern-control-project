@@ -1,0 +1,2 @@
+Settling_s,LastSecondMaxArm_deg,LastSecondMaxPendulum_deg,LastSecondMaxArmRate_deg_s,LastSecondMaxPendulumRate_deg_s,PeakBridgeRequest_V,FinalPendulum_deg,FinalArm_deg
+1.69,0.000517224719443903,0.000135037887977867,0.0076809252785429,0.00375069891841466,1.59593011809738,-3.90966264389946e-06,-0.000102865841276357

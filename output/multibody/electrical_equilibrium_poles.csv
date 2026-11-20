@@ -1,0 +1,9 @@
+Equilibrium,Real_per_s,Imag_per_s,Controllability,Observability
+Upright,0,0,0,4
+Upright,10.9200374534489,0,0,4
+Upright,-11.3329661394578,0,0,4
+Upright,-0.340272314431538,0,0,4
+Hanging,0,0,0,4
+Hanging,-0.206459653129988,11.1225167030577,0,4
+Hanging,-0.206459653129988,-11.1225167030577,0,4
+Hanging,-0.340281694180426,0,0,4

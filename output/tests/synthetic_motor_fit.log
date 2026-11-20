@@ -1,0 +1,6 @@
+    R_ohm     Ke_V_per_rad_s    speedGain_rad_s_per_V    timeConstant_s    noLoadRPM_at_12V    fit_RMSE_rpm    fit_RMSE_A    validation_RMSE_rpm    validation_RMSE_A    fit_samples    validation_samples
+    ______    ______________    _____________________    ______________    ________________    ____________    __________    ___________________    _________________    ___________    __________________
+
+    6.0026       0.53578               1.7452               0.20004             199.98           0.67697       0.0078823           0.60493              0.0079424            875               176        
+
+SYNTHETIC_MOTOR_FIT_VERIFIED

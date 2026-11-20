@@ -1,0 +1,22 @@
+Connected Swing-Up to the electrical bridge.
+Electrical Swing-Up wiring passed with both external commands at zero.
+In 3.0 s, the closest approach was 179.7 deg from upright.
+Samples inside the provisional angle and speed capture limits: 0.
+Error using assert
+Coast 1.434 A, minimum brake -0.1125 A, max brake current times speed -0.1316.
+
+Error in verify_furuta_electrical_drive (line 40)
+assert(coastCurrent<.01 && brakeCurrent<-.02 && brakePowerSign<0, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+{Error using assert
+Coast 1.434 A, minimum brake -0.1125 A, max brake current times speed -0.1316.
+
+Error in verify_furuta_electrical_drive (line 40)
+assert(coastCurrent<.01 && brakeCurrent<-.02 && brakePowerSign<0, ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+[Warning: Unable to close the model 'furuta_multibody_electrical' because it has been changed. To save changes, use
+close_system('furuta_multibody_electrical',1). To discard changes, use close_system('furuta_multibody_electrical',0).] 
+[Warning: Save contents of model workspace before closing?
+
+ The model workspace's data source is file "".] 

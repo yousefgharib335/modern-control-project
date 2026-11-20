@@ -1,0 +1,27 @@
+Loaded CAD parameter snapshot.
+Connected gravity and both revolute joints.
+Adding CAD body Motor_1
+Adding CAD body motor_holder_1
+Adding CAD body Assembly2_1
+Adding CAD body ROTERY_ENCODER_step_2
+Adding CAD body Rigid_6_to_8mm_Coupler_v2_1
+Adding CAD body ALLEN_04_mm_1
+Adding CAD body Fixed_Profile_1
+Adding CAD body Fixed_Profile_2
+Compiling physical model.
+Saved CAD-derived Simscape Multibody plant.
+Voltage plant checks passed. Unloaded speed 199.98 RPM.
+Peak errors: 8.88e-16 A, 1.67e-16 N*m, 7.16e-08 rad, 8.3e-07 rad/s.
+         Test          MaxAngleError_rad    MaxRateError_rad_s
+    _______________    _________________    __________________
+
+    "equilibrium"         8.6745e-15            1.1808e-13    
+    "initial_angle"       1.3719e-08            4.2414e-07    
+    "voltage_step"        9.7221e-11            6.5476e-09    
+
+Voltage upright poles (1/s):
+         0
+   10.8986
+  -11.3909
+   -4.7039
+

@@ -1,0 +1,8 @@
+Built furuta_pid_model with the L298N plant subsystem.
+Built furuta_pole_placement_model with the L298N plant subsystem.
+Built furuta_lqr_model with the L298N plant subsystem.
+Built furuta_hybrid_model with the L298N plant subsystem.
+furuta_pid_model passed L298N command, state feedback, and brake checks.
+furuta_pole_placement_model passed L298N command, state feedback, and brake checks.
+furuta_lqr_model passed L298N command, state feedback, and brake checks.
+furuta_hybrid_model passed L298N command, state feedback, and brake checks.

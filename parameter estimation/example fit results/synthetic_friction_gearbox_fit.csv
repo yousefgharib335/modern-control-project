@@ -1,0 +1,2 @@
+arm_damping_Nm_s_per_rad,hinge_damping_Nm_s_per_rad,gear_ratio_motor_to_output,gear_efficiency_fraction,arm_validation_RMSE_deg,hinge_validation_RMSE_deg,gear_validation_RMSE_rpm,gear_validation_power_RMSE_W
+0.000109999457619522,2.40372219881479e-05,29.9980113972515,0.745718858550019,0.0748961717811674,0.0805290120889947,0.165857617017969,0.0144571801160249

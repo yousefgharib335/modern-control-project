@@ -1,0 +1,13 @@
+         Test          MaxAngleError_rad    MaxRateError_rad_s
+    _______________    _________________    __________________
+
+    "equilibrium"         8.6745e-15            1.1808e-13    
+    "initial_angle"       1.3719e-08            4.2414e-07    
+    "voltage_step"        9.7221e-11            6.5476e-09    
+
+Voltage upright poles (1/s):
+         0
+   10.8986
+  -11.3909
+   -4.7039
+

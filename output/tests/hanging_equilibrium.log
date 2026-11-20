@@ -1,0 +1,16 @@
+          Case           Real_per_s    Imag_per_s
+    _________________    __________    __________
+
+    "Undamped"                   0            0  
+    "Undamped"                   0            0  
+    "Undamped"                   0       12.581  
+    "Undamped"                   0      -12.581  
+    "Example damping"            0            0  
+    "Example damping"     -0.34492       12.572  
+    "Example damping"     -0.34492      -12.572  
+    "Example damping"     -0.56893            0  
+
+Finite-difference Jacobian error (undamped/damped): 7.74e-09 / 7.74e-09
+Nonlinear comparison max angle error rad: 3.15e-07 / 1.58e-07
+Nonlinear comparison max rate error rad/s: 4.43e-06 / 2.04e-06
+HANGING_EQUILIBRIUM_VERIFIED

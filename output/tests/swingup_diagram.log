@@ -1,0 +1,3 @@
+Built furuta_hybrid_model with the L298N plant subsystem.
+Swing-Up blocks matched the function for 8 states. Max voltage error 5.55e-16 V.
+Rendered the labeled Swing-Up subsystem.

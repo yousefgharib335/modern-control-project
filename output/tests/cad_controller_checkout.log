@@ -1,0 +1,25 @@
+[Warning: The model name 'furuta_pid_cad' is shadowing another name in the MATLAB workspace or path. Type "which -all furuta_pid_cad" at the command line to find the other uses of
+this name. You should change the name of the model to avoid problems.] 
+[> In build_furuta_cad_controllers>buildModel (line 29)
+In build_furuta_cad_controllers (line 15)] 
+Built furuta_pid_cad with the CAD plant reference.
+[Warning: The model name 'furuta_pole_placement_cad' is shadowing another name in the MATLAB workspace or path. Type "which -all furuta_pole_placement_cad" at the command line to
+find the other uses of this name. You should change the name of the model to avoid problems.] 
+[> In build_furuta_cad_controllers>buildModel (line 29)
+In build_furuta_cad_controllers (line 15)] 
+Built furuta_pole_placement_cad with the CAD plant reference.
+[Warning: The model name 'furuta_lqr_cad' is shadowing another name in the MATLAB workspace or path. Type "which -all furuta_lqr_cad" at the command line to find the other uses of
+this name. You should change the name of the model to avoid problems.] 
+[> In build_furuta_cad_controllers>buildModel (line 29)
+In build_furuta_cad_controllers (line 15)] 
+Built furuta_lqr_cad with the CAD plant reference.
+[Warning: The model name 'furuta_hybrid_cad' is shadowing another name in the MATLAB workspace or path. Type "which -all furuta_hybrid_cad" at the command line to find the other
+uses of this name. You should change the name of the model to avoid problems.] 
+[> In build_furuta_cad_controllers>buildModel (line 29)
+In build_furuta_cad_controllers (line 15)] 
+Built furuta_hybrid_cad with the CAD plant reference.
+furuta_pid_cad passed zero-torque isolation and test-torque checks (state error 1.56e-09).
+furuta_pole_placement_cad passed zero-torque isolation and test-torque checks (state error 0).
+furuta_lqr_cad passed zero-torque isolation and test-torque checks (state error 0).
+furuta_hybrid_cad passed zero-torque isolation and test-torque checks (state error 1.6e-08).
+CAD_WIRING_VERIFIED

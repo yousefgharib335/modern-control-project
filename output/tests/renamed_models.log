@@ -1,0 +1,16 @@
+RENAME_STARTED
+RENAMED_PLANT_SAVED
+RENAMED furuta_pid_model
+RENAMED furuta_pole_placement_model
+RENAMED furuta_lqr_model
+RENAMED furuta_hybrid_model
+furuta_pid_model passed zero-torque isolation and test-torque checks (state error 5.7e-09).
+furuta_pole_placement_model passed zero-torque isolation and test-torque checks (state error 0).
+furuta_lqr_model passed zero-torque isolation and test-torque checks (state error 0).
+furuta_hybrid_model passed zero-torque isolation and test-torque checks (state error 3.56e-09).
+    initial_angle_deg    peak_angle_deg    final_angle_deg    settling_time_s    max_analytical_angle_error_deg    assumed_arm_damping    assumed_pendulum_damping
+    _________________    ______________    _______________    _______________    ______________________________    ___________________    ________________________
+
+            1                313.71              180              22.669                   0.00011305                    0.00011                  2.4e-05         
+
+RENAMED_MODELS_VERIFIED
