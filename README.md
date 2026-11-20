@@ -1,6 +1,6 @@
 # Furuta pendulum project
 
-The MATLAB project includes a plant model for Section 4.1 and dashboard and digital twin work for Sections 4.5 and 4.6. The dashboard displays synthetic signals and animates a synchronized pendulum schematic. The controller models use the shared L298N, motor, and CAD-derived Simscape plant for wiring checkout. Controller tuning, dashboard integration, and hardware testing remain pending.
+The project models a rotary inverted pendulum in MATLAB and Simscape. The standalone PID, pole-placement, and LQR controllers use the same switching L298N drive and CAD-derived plant. Each recovers from the verified upright push test. The dashboard prototype displays synthetic signals and animates a synchronized pendulum schematic. Hybrid capture and hardware validation are later work.
 
 ## Run and verify
 
@@ -8,6 +8,7 @@ Open this folder in MATLAB R2026b. Run `run_dashboard` to launch the demo or `ve
 
 | Area | Files |
 | --- | --- |
+| Phase 1 and Phase 2 progress report | [PDF](documentation/furuta-phases-1-and-2-report.pdf) · [Editable Word report](documentation/furuta-phases-1-and-2-report.docx) · [Controller results](output/multibody/electrical_controller_push_comparison.csv) |
 | MATLAB entry points | [Launch the dashboard](run_dashboard.m) · [Run verification](verify_dashboard.m) |
 | Plant model | [Plant setup](documentation/plant-model.md) · [Euler-Lagrange derivation](documentation/nonlinear-derivation.md) · [Parameter table](src/plant/furuta_parameters.m) · [Example plant builder](build_furuta_plant.m) |
 | Simscape Multibody plant | [CAD mechanical plant and validation](documentation/multibody-plant.md) · [Multibody model](models/furuta_multibody.slx) · [Open detailed CAD animation](view_furuta_multibody.m) |

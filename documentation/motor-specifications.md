@@ -6,11 +6,21 @@
 | Supply | 12 V DC | Nominal supply |
 | No-load output speed | 200 RPM | 20.943951 rad/s |
 | Output torque | 4.5 kgf cm | 0.441299 N m; rated versus stall classification unspecified |
-| Gears | Metal | Gear ratio pending |
+| Gears | Metal | Provisional signed ratio listed below |
 | Output shaft | Approximately 6 mm | Verify against purchased unit |
 | Encoder | Built in | Pulse count, quadrature convention and signal levels pending |
 
 These are user-supplied product details. The 4.5 kgf cm figure is recorded as an output-torque specification with an unspecified operating condition.
+
+## Additional provisional motor assumptions supplied on 20 November 2026
+
+| Parameter | Assumed value | Model interpretation |
+| --- | --- | --- |
+| Signed gearbox ratio | −35.0048 | Stored as the supplied signed ratio. The motor coordinate in the model is oriented to match the arm, so its speed and torque conversions use the reduction magnitude, 35.0048:1. |
+| Motor-shaft viscous friction | 4.08 × 10⁻⁹ N·m·s/rad | Multiplying by the squared ratio gives 4.99937 × 10⁻⁶ N·m·s/rad at the output. This is the drive viscous loss used in the model. The independent arm and pendulum joint damping estimates remain separate. |
+| Motor armature inductance | 12.003374 µH | 1.2003374 × 10⁻⁵ H for the Simscape DC Motor block. |
+
+These three values are user-supplied assumptions from the screenshot. Their measurement basis and shaft sign convention still need confirmation. Resistance, effective output-side back EMF and torque constants, gear efficiency, and reflected inertia retain their earlier provisional values. Keeping the effective output constants preserves the existing voltage and torque sign across the new shaft conversion.
 
 ## Voltage-driven simulation
 
@@ -21,15 +31,15 @@ Run `build_furuta_multibody("voltage")` to generate `models/furuta_multibody_vol
 | Winding resistance | 6.0026 Ω | Synthetic motor fit |
 | Effective output-side back-EMF constant | 0.53578 V/(rad/s) | Synthetic motor fit |
 | Effective output-side torque constant | 0.15 N·m/A | Assumed in the synthetic data |
-| Motor-to-output speed ratio | 29.998:1 | Synthetic gearbox fit |
+| Motor-to-output speed ratio | 35.0048:1 | Supplied ratio magnitude |
 | Gear efficiency | 74.57% | Synthetic gearbox fit |
 | Reflected drive inertia | 0.0028644 kg·m² | Derived from the fitted speed time constant |
-| Output-side drive viscous damping | 0.00093051 N·m/(rad/s) | Derived from the fitted speed gain |
+| Output-side drive viscous damping | 4.99937 × 10⁻⁶ N·m·s/rad | Supplied motor friction reflected through the gearbox |
 | Arm and pendulum hinge damping | 0.0001100 and 0.00002404 N·m/(rad/s) | Synthetic joint friction fits |
 
 The model converts the effective constants to motor-side gains before applying the explicit gearbox gains. This accounts for the gear ratio and efficiency once. The torque output is the geared electromagnetic torque minus drive viscous loss. The attached Simscape Inertia block represents the reflected rotor and gearbox inertia at the arm joint. The winding current is algebraic, with inductance neglected. The gearbox uses a constant efficiency factor, and the model uses ideal joint-rate sensing.
 
-The fit predicts approximately 200 RPM at 12 V for the unloaded drive. The 4.5 kgf cm product figure has an unspecified operating condition and is recorded separately from the model's assumptions. Motor and gearbox identification, driver current limits, and encoder resolution still need hardware data. The [controller models](cad-controller-wiring.md) use the L298N variant described below.
+The original synthetic fit predicts approximately 200 RPM at 12 V for the unloaded drive with its original damping. The 4.5 kgf cm product figure has an unspecified operating condition and is recorded separately from the model's assumptions. Motor and gearbox identification, driver current limits, and encoder resolution still need hardware data. The [controller models](cad-controller-wiring.md) use the switching electrical variant described below.
 
 ## L298N driver simulation
 
@@ -45,7 +55,7 @@ Run `verify_furuta_l298n` to exercise forward, reverse, half duty, saturation, c
 
 Open [furuta_multibody_electrical.slx](../models/furuta_multibody_electrical.slx) and double-click **System** to see **H-Bridge**, **DC Motor**, and **Pendulum Plant**. Two Simscape electrical terminals connect the bridge to the motor. Use **Motor Current A** and **Motor Terminal Voltage V** to inspect individual PWM pulses. The motor receives arm speed multiplied by the gear ratio. To preserve the independently assumed effective drivetrain torque constant, the circuit's sensed current is converted to fitted output torque and sent to the arm joint. The reflected drive inertia acts through the pendulum plant once.
 
-The armature inductance is provisionally **0.5 mH** and the PWM frequency is provisionally **1 kHz**. The generic bridge uses a **9.45 V** internal amplitude based on the nominal 12 V supply minus the estimated L298N drop at 1 A. It uses two freewheeling diodes during PWM off intervals. The circuit omits board-specific thermal behavior and overcurrent protection. Calibrate inductance, PWM frequency, and driver losses before interpreting peak currents as hardware predictions. [MathWorks H-Bridge documentation](https://www.mathworks.com/help/simscape-electrical/ref/hbridge.html)
+The armature inductance is provisionally **12.003374 µH** and the PWM frequency is provisionally **1 kHz**. The generic bridge uses a **9.45 V** internal amplitude based on the nominal 12 V supply minus the estimated L298N drop at 1 A. It uses two freewheeling diodes during PWM off intervals. The circuit omits board-specific thermal behavior and overcurrent protection. Calibrate inductance, PWM frequency, and driver losses before interpreting peak currents as hardware predictions. [MathWorks H-Bridge documentation](https://www.mathworks.com/help/simscape-electrical/ref/hbridge.html)
 
 In the base electrical model, **Motor Voltage V** drives the H-bridge directly. The [electrical model with swing-up](../models/furuta_multibody_electrical_swingup.slx) starts hanging at rest. Its **Drive Command** selects **SwingUp** by default and sends the provisional controller command to the H-bridge. Set its active choice to **Manual** to use **Motor Voltage V** directly. The hybrid balance controller and Stateflow supervisor are in the separate [hybrid controller model](../models/furuta_hybrid_model.slx), which uses the same electrical **System**.
 

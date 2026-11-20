@@ -41,7 +41,7 @@ assignin(workspace,'drive',drive);
 assignin(workspace,'furutaCoverImages',getVariable(plantWorkspace,'furutaCoverImages'));
 isHybrid = strcmp(variant,'hybrid');
 isPID = strcmp(variant,'pid');
-initialState = [0;deg2rad(10);0;0];
+initialState = zeros(4,1);
 if isHybrid
     initialState(2) = pi;
 end
@@ -53,6 +53,9 @@ else
     dataFolder = fullfile(fileparts(folder),'output','multibody');
     data = load(fullfile(dataFolder,'electrical_equilibrium_state_space.mat'));
     fit = load(fullfile(dataFolder,'electrical_upright_average_fit.mat'));
+    assert(isfield(fit,'drive') && isequal(fit.drive,drive) && ...
+        isfield(data,'drive') && isequal(data.drive,drive), ...
+        'Run the electrical current calibration and equilibrium analysis for the saved drive.');
     pwm = furuta_pwm_compensation_config(fit,data.referenceVoltage,1/drive.pwmFrequency);
     controllerBlock = [model '/' controller];
     if isPID
@@ -74,7 +77,7 @@ else
         addStateFeedback(controllerBlock,controllerPosition);
     end
     set_param(model,'StopTime','5','Description', ...
-        [controller ' starting 10 degrees from upright with a short torque push at the pendulum joint.']);
+        [controller ' starting upright at rest with a short torque push at the pendulum joint.']);
 end
 % Keep joint targets local because Simscape treats them as non-tunable.
 add_block([plant '/System'],[model '/System'],'Position',[865 70 1055 245]);

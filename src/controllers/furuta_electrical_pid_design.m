@@ -4,7 +4,7 @@ A = data.upright.A;
 B = data.designB;
 g = struct('armP',0,'pendulumP',0,'armD',0,'pendulumD',0,'armI',0, ...
     'filterRate',80,'antiWindupRate',5,'voltageLimit',compensation.equivalentVoltageLimit, ...
-    'initialState',[0;deg2rad(1);0;0],'targetPoles',[-2 -2.75 -3.5 -4.25 -5]);
+    'initialState',[0;deg2rad(1);0;0],'targetPoles',[-3 -3.75 -4.5 -5.25 -6]);
 gainNames = {'armP','pendulumP','armD','pendulumD','armI'};
 gainEquation = zeros(5);
 for k = 1:5

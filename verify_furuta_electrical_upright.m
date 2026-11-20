@@ -48,6 +48,8 @@ positive = ~validation & voltage>0;
 negative = ~validation & voltage<0;
 voltageKnots = [0;voltage(positive)];
 currentKnots = [0;(average(positive,2)-average(negative,2))/2];
+assert(all(abs(average(abs(voltage)<=.03,2))<1e-7), ...
+    'The assumed zero-response band no longer matches the switching model.');
 currentKnots(voltageKnots<=.03) = 0;
 comparison.FittedAverageCurrent_A = sign(voltage).*interp1(voltageKnots,currentKnots,abs(voltage),'pchip');
 comparison.HeldOut = validation;
@@ -57,5 +59,5 @@ fprintf('Held-out current RMSE, previous average %.4g A, fitted average %.4g A.\
 assert(newError<oldError,'FurutaElectrical:AverageFit','The fit did not improve held-out current agreement.');
 writetable(comparison,fullfile(root,'output','multibody','electrical_upright_pwm_comparison.csv'));
 folder = fullfile(root,'output','multibody');
-save(fullfile(folder,'electrical_upright_average_fit.mat'),'voltageKnots','currentKnots','oldError','newError');
+save(fullfile(folder,'electrical_upright_average_fit.mat'),'voltageKnots','currentKnots','oldError','newError','drive');
 end

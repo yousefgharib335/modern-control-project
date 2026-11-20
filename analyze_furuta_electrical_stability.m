@@ -12,6 +12,8 @@ end
 workspace = get_param(model,'ModelWorkspace');
 p = getVariable(workspace,'p');
 drive = getVariable(workspace,'drive');
+assert(isfield(fit,'drive') && isequal(fit.drive,drive), ...
+    'Run verify_furuta_electrical_upright to calibrate the saved drive parameters.');
 assert(all(fit.currentKnots(fit.voltageKnots<=.03)==0), ...
     'Expected the measured averaged map to be flat around zero.');
 
@@ -30,7 +32,7 @@ designB = upright.torqueB*(drive.torqueConstantOutput*referenceCurrent/reference
 designRank = controllabilityRank(upright.A,designB);
 assert(designRank==4,'The finite-amplitude design model should be reachable.');
 results = struct('upright',upright,'hanging',hanging,'referenceVoltage',referenceVoltage, ...
-    'designB',designB,'designRank',designRank);
+    'designB',designB,'designRank',designRank,'drive',drive);
 save(fullfile(folder,'electrical_equilibrium_state_space.mat'),'-struct','results');
 poleTable = table(repelem(["Upright";"Hanging"],4), ...
     real([upright.poles;hanging.poles]),imag([upright.poles;hanging.poles]), ...

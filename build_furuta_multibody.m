@@ -26,7 +26,6 @@ if electrical
     if withSwingUp
         model='furuta_multibody_electrical_swingup';
     end
-    drive.armatureInductance=0.5e-3; % H, provisional until measured
     drive.pwmFrequency=1000; % Hz, provisional controller setting
     load_system('ee_lib');
     load_system('fl_lib');
