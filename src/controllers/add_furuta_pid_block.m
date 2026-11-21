@@ -1,33 +1,43 @@
 function add_furuta_pid_block(controller,position,g)
-% Build a PID/PD subsystem with a continuous controller state.
-folder = fileparts(mfilename('fullpath'));
-add_block('simulink/Ports & Subsystems/Subsystem',controller,'Position',position);
-Simulink.SubSystem.deleteContents(controller);
+% Build the arm PID and pendulum PD using continuous Simulink blocks.
+add_block('built-in/Subsystem',controller,'Position',position);
+addRateFilter([controller '/Arm Rate Filter'],[145 105 245 149],g.filterRate,'initialState(1)');
+addRateFilter([controller '/Pendulum Rate Filter'],[145 335 245 379],g.filterRate,'initialState(2)');
 makeBlocks(controller,{
-    'Arm Angle','Sources/In1',[35 65],{}, {'Port','1'}
-    'Pendulum Angle','Sources/In1',[35 155],{}, {'Port','2'}
-    'Controller State','Continuous/Integrator',[510 240],{}, {'InitialCondition','[0;initialState(1:2)]'}
-    'Voltage','Sinks/Out1',[660 65],{}, {'Port','1'}
-    'Unsaturated Voltage','Sinks/Out1',[660 155],{}, {'Port','2'}
+    'Arm Angle','Sources/In1',[30 55],{}, {'Port','1'}
+    'Pendulum Angle','Sources/In1',[30 290],{}, {'Port','2'}
+    'Arm P','Math Operations/Gain',[300 45],{'Arm Angle'}, {'Gain',num2str(g.armP,17)}
+    'Arm D','Math Operations/Gain',[300 105],{'Arm Rate Filter'}, {'Gain',num2str(g.armD,17)}
+    'Arm I','Math Operations/Gain',[195 215],{'Arm Angle'}, {'Gain',num2str(g.armI,17)}
+    'Integral Input','Math Operations/Sum',[300 215],{'Arm I','Anti-Windup Gain'}, {'Inputs','++'}
+    'Integral Voltage','Continuous/Integrator',[405 215],{'Integral Input'}, {'InitialCondition','0'}
+    'Pendulum P','Math Operations/Gain',[300 280],{'Pendulum Angle'}, {'Gain',num2str(g.pendulumP,17)}
+    'Pendulum D','Math Operations/Gain',[300 335],{'Pendulum Rate Filter'}, {'Gain',num2str(g.pendulumD,17)}
+    'Requested Voltage','Math Operations/Sum',[535 155], ...
+        {'Arm P','Integral Voltage','Arm D','Pendulum P','Pendulum D'}, {'Inputs','+++++'}
+    'Voltage Limit','Discontinuities/Saturation',[660 155],{'Requested Voltage'}, ...
+        {'UpperLimit',num2str(g.voltageLimit,17),'LowerLimit',num2str(-g.voltageLimit,17)}
+    'Saturation Error','Math Operations/Sum',[635 405],{'Voltage Limit','Requested Voltage'}, ...
+        {'Inputs','+-','Orientation','left'}
+    'Anti-Windup Gain','Math Operations/Gain',[430 405],{'Saturation Error'}, ...
+        {'Gain',num2str(g.antiWindupRate,17),'Orientation','left'}
+    'Voltage','Sinks/Out1',[795 155],{'Voltage Limit'}, {'Port','1'}
+    'Unsaturated Voltage','Sinks/Out1',[795 85],{'Requested Voltage'}, {'Port','2'}
 });
-add_block('simulink/User-Defined Functions/MATLAB Function', ...
-    [controller '/PID Function'],'Position',[225 65 405 175]);
-chart = find(sfroot,'-isa','Stateflow.EMChart','Path',[controller '/PID Function']);
-assignments = strings(0,1);
-for name = string(fieldnames(g)).'
-    assignments(end+1,1) = sprintf('g.%s = %s;',name,mat2str(g.(name),17));
+wire(controller,'Arm Angle','Arm Rate Filter/1');
+wire(controller,'Pendulum Angle','Pendulum Rate Filter/1');
 end
-chart.Script = char(strjoin([ ...
-    "function [voltage, requestedVoltage, stateDerivative] = controller(theta0,theta1,state)"; ...
-    assignments; ...
-    "[voltage, requestedVoltage, stateDerivative] = furuta_pid(theta0,theta1,state,g);"; ...
-    "end"; string(fileread(fullfile(folder,'furuta_pid.m')))],newline));
-wire(controller,'Arm Angle','PID Function/1');
-wire(controller,'Pendulum Angle','PID Function/2');
-wire(controller,'Controller State','PID Function/3');
-wire(controller,'PID Function/1','Voltage/1');
-wire(controller,'PID Function/2','Unsaturated Voltage/1');
-wire(controller,'PID Function/3','Controller State/1');
+
+function addRateFilter(block,position,rate,initialAngle)
+add_block('built-in/Subsystem',block,'Position',position);
+makeBlocks(block,{
+    'Angle','Sources/In1',[25 55],{}, {'Port','1'}
+    'Angle Error','Math Operations/Sum',[115 55],{'Angle','Filtered Angle'}, {'Inputs','+-'}
+    'Filter Rate','Math Operations/Gain',[215 55],{'Angle Error'}, {'Gain',num2str(rate,17)}
+    'Filtered Angle','Continuous/Integrator',[215 140],{'Filter Rate'}, ...
+        {'InitialCondition',initialAngle,'Orientation','left'}
+    'Angular Rate','Sinks/Out1',[340 55],{'Filter Rate'}, {'Port','1'}
+});
 end
 
 function makeBlocks(system,rows)

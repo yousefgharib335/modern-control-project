@@ -10,8 +10,8 @@ g = furuta_pid_gains(p);
 model = char("furuta_pid_" + source);
 load_system(fullfile(root,'models',[model '.slx']));
 closeModel = onCleanup(@()close_system(model,0));
-chart = find(sfroot,'-isa','Stateflow.EMChart','Path',[model '/PID Controller/PID Function']);
-assert(~isempty(chart),'FurutaPID:Function','PID Function block is missing.');
+assert(getSimulinkBlockHandle([model '/PID Controller'])~=-1, ...
+    'FurutaPID:Controller','PID Controller subsystem is missing.');
 [A,B] = furuta_linearize(p);
 % Linear closed loop includes the integral voltage and both derivative filters.
 linear = zeros(7);

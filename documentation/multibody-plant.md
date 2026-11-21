@@ -4,6 +4,7 @@ Open the project folder in MATLAB and run:
 
 ```matlab
 build_furuta_multibody
+addpath('open loop validation')
 verify_furuta_multibody
 view_furuta_multibody
 ```
@@ -72,6 +73,8 @@ The verification covers zero-torque hanging motion, a constant torque near hangi
 It also obtains A, B, C and D at upright and compares the nonlinear mechanical model with the linear state-space response over a short interval with a 0.001 rad initial displacement. These matrices accept torque in N m.
 
 Verification writes traces, error metrics and CAD state-space matrices under `output/multibody/`. Response overlays of the verified run are saved there as PNG files. These checks establish consistency for the selected CAD grouping and assumed friction. Physical parameter validation remains separate.
+
+The verifier opens two figures by default. One overlays the Simscape and nonlinear pendulum angle in all four tests. The other compares both angles and both angular rates from the nonlinear and linearized models near upright. Run `verify_furuta_multibody(false)` to save the numerical results without opening the figures.
 
 The [controller wiring models](cad-controller-wiring.md) use the CAD plant with the [L298N driver and motor](motor-specifications.md). The torque-input model remains available for open-loop mechanical validation.
 

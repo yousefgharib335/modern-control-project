@@ -1,6 +1,9 @@
-function verify_furuta_multibody
+function verify_furuta_multibody(showPlots)
 % Compare the Simscape plant with general CAD rigid-body equations.
-root=fileparts(mfilename('fullpath'));
+arguments
+    showPlots (1,1) logical = true
+end
+root=fileparts(fileparts(mfilename('fullpath')));
 addpath(fullfile(root,'src','plant'));
 p=furuta_cad_parameters;
 model='furuta_multibody';
@@ -11,10 +14,18 @@ if ~isfolder(output)
     mkdir(output);
 end
 names=["hanging_free","hanging_torque","upright_small","hanging_damped"];
+titles=["Free motion near hanging","Applied torque near hanging", ...
+    "Release near upright","Damped motion near hanging"];
+equilibria=[pi pi 0 pi];
 initials={[0;pi+0.1;0;0],[0;pi+0.05;0;0],[0;0.01;0;0],[0;pi+0.1;0;0]};
 stops=[2 0.75 0.15 2];
 torques=[0 0.001 0 0];
 summary=table();
+if showPlots
+    figure('Name','Open-loop validation','NumberTitle','off');
+    overlays=tiledlayout(2,2,'TileSpacing','compact','Padding','compact');
+    title(overlays,'Open-loop validation against the nonlinear equations');
+end
 for test=1:numel(names)
     parameters=p;
     if test==4
@@ -63,7 +74,12 @@ for test=1:numel(names)
     writetable(data,fullfile(output,names(test)+".csv"));
     summary=[summary;table(names(test),angleError,rateError, ...
         'VariableNames',{'Test','MaxAngleError_rad','MaxRateError_rad_s'})];
-
+    if showPlots
+        ax=nexttile(overlays);
+        compareResponse(ax,t,rad2deg(y(:,2)-equilibria(test)), ...
+            rad2deg(reference(:,2)-equilibria(test)),titles(test), ...
+            'Pendulum angle deviation (deg)','Simscape','Nonlinear equations');
+    end
 end
 
 % Upright state-space representation of this same CAD mechanical model.
@@ -91,7 +107,31 @@ writetable(array2table([t nonlinear linear],'VariableNames', ...
     'LinearTheta0','LinearTheta1','LinearOmega0','LinearOmega1'}), ...
     fullfile(output,'upright_linear_comparison.csv'));
 writetable(summary,fullfile(output,'validation_metrics.csv'));
+if showPlots
+    figure('Name','Upright linearization','NumberTitle','off');
+    comparison=tiledlayout(2,2,'TileSpacing','compact','Padding','compact');
+    title(comparison,'Small release near upright');
+    states=["Arm angle","Pendulum angle","Arm angular rate","Pendulum angular rate"];
+    units=["Angle deviation (deg)","Angle deviation (deg)", ...
+        "Angular rate (deg/s)","Angular rate (deg/s)"];
+    for k=1:4
+        compareResponse(nexttile(comparison),t,rad2deg(nonlinear(:,k)), ...
+            rad2deg(linear(:,k)),states(k),units(k),'Nonlinear equations','Linearized model');
+    end
+end
 disp(summary);
 fprintf('Small-signal state-space max error %.3g.\n',linearError);
 disp('Simscape, CAD analytical equations, energy and upright linearization checks passed.');
+end
+
+function compareResponse(ax,t,first,second,label,yLabel,firstName,secondName)
+plot(ax,t,first,'-','LineWidth',1.5,'DisplayName',firstName);
+hold(ax,'on');
+plot(ax,t,second,'--','LineWidth',1.2,'DisplayName',secondName);
+hold(ax,'off');
+grid(ax,'on');
+title(ax,label);
+xlabel(ax,'Time (s)');
+ylabel(ax,yLabel);
+legend(ax,'Location','best');
 end

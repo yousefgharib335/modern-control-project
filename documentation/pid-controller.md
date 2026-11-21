@@ -10,7 +10,7 @@ open_system(fullfile('models','furuta_pid_example.slx'))
 
 Press Run to simulate a five-degree initial pendulum displacement and a one-volt disturbance pulse from 4.0 to 4.1 seconds. The Angle Scope shows the arm and pendulum angles in radians. The Voltage Scope shows the applied motor terminal voltage. Results contain the four plant states, applied voltage and controller voltage before limiting.
 
-The model embeds its coefficients in its model workspace. Open PID Controller and then PID Function to inspect the controller code. The continuous controller state is stored in an external Integrator block. The reusable MATLAB implementation is [furuta_pid.m](../src/controllers/furuta_pid.m). The model embeds a copy of this function and its gains when built. Rebuild after changing either file. Open Plant Dynamics to inspect the nonlinear equations.
+Open **PID Controller** to inspect the proportional gains, derivative filters, integrator, saturation, and anti-windup feedback. The rate filters initialize from the corresponding joint angles. Rebuild to apply changes to the calculated gains. The equivalent MATLAB reference is [furuta_pid.m](../src/controllers/furuta_pid.m). Open **Plant Dynamics** in the example model to inspect the nonlinear equations.
 
 ## Control law
 

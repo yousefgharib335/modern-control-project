@@ -15,6 +15,8 @@ All three standalone balance models include **Small Command Compensation** and l
 
 Open **Pole Placement Controller** or **LQR Controller** to see the standard Simulink **State Feedback -K** matrix Gain and **Voltage Limit** Saturation blocks. The gain and limits are stored in `stateFeedbackDesign` in the corresponding model workspace.
 
+Open **PID Controller** to see the arm PID and pendulum PD built from Gain, Sum, Integrator, and Saturation blocks. **Arm Rate Filter** and **Pendulum Rate Filter** use the initial joint angles, and the anti-windup path feeds the saturation error back to the arm integral.
+
 From the project folder in MATLAB, run the following to verify the saved models:
 
 ```matlab

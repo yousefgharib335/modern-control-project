@@ -3,7 +3,7 @@ function summary = demo_furuta_milestone1(showAnimation)
 arguments
     showAnimation (1,1) logical = true
 end
-root = fileparts(mfilename('fullpath'));
+root = fileparts(fileparts(mfilename('fullpath')));
 addpath(fullfile(root,'src','plant'));
 model = 'furuta_multibody';
 modelFile = fullfile(root,'models',[model '.slx']);

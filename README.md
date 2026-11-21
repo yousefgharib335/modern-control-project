@@ -11,7 +11,7 @@ Open this folder in MATLAB R2026b. Run `run_dashboard` to launch the demo or `ve
 | Phase 1 and Phase 2 progress report | [PDF](documentation/furuta-phases-1-and-2-report.pdf) · [Editable Word report](documentation/furuta-phases-1-and-2-report.docx) · [Controller results](output/multibody/electrical_controller_push_comparison.csv) |
 | MATLAB entry points | [Launch the dashboard](run_dashboard.m) · [Run verification](verify_dashboard.m) |
 | Plant model | [Plant setup](documentation/plant-model.md) · [Euler-Lagrange derivation](documentation/nonlinear-derivation.md) · [Parameter table](src/plant/furuta_parameters.m) · [Example plant builder](build_furuta_plant.m) |
-| Simscape Multibody plant | [CAD mechanical plant and validation](documentation/multibody-plant.md) · [Multibody model](models/furuta_multibody.slx) · [Open detailed CAD animation](view_furuta_multibody.m) |
+| Simscape Multibody plant | [CAD mechanical plant and validation](documentation/multibody-plant.md) · [Multibody model](models/furuta_multibody.slx) · [Open-loop verification](open%20loop%20validation/verify_furuta_multibody.m) · [Upright fall demo](open%20loop%20validation/demo_furuta_milestone1.m) |
 | Voltage-driven Simscape baseline (generated on demand) | [Voltage-profile verification](verify_furuta_voltage_plant.m) · [Upright linearization verification](verify_furuta_voltage_upright.m) |
 | L298N-driven Simscape plant | [Driver, motor and plant model](models/furuta_multibody_l298n.slx) · [Driver verification](verify_furuta_l298n.m) |
 | Switching electrical drive | [Simscape Electrical motor and H-bridge](models/furuta_multibody_electrical.slx) · [Switching verification](verify_furuta_electrical_drive.m) |
